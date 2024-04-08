@@ -1,0 +1,170 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "fd14b4e3-af21-49da-a97b-29e0ab15136c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "mean: 166.7\n"
+     ]
+    }
+   ],
+   "source": [
+    "import numpy as np\n",
+    "height = np.array ([160, 155, 172, 165, 180, 158,175, 163, 171,168])\n",
+    "mean = np.mean(height)\n",
+    "print(\"mean:\",mean)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "5b8c1fb3-c944-464f-b6ff-774294f95e8f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "median: 166.5\n"
+     ]
+    }
+   ],
+   "source": [
+    "median= np.median(height)\n",
+    "print(\"median:\",median)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "e5e22503-c8c3-4854-ae07-5a35c99b26f1",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "standard deviation 7.5372408744845085\n"
+     ]
+    }
+   ],
+   "source": [
+    "std_dev=np.std(height)\n",
+    "print(\"standard deviation\",std_dev)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "73de18b6-44b6-4a05-9d7b-869e319ce2a5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "argmax 4\n"
+     ]
+    }
+   ],
+   "source": [
+    "array_argmax=np.argmax(height)\n",
+    "print(\"argmax\",array_argmax)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "a4333d55-fe9f-42bb-9fcc-eabe65bb113f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "argmin 1\n"
+     ]
+    }
+   ],
+   "source": [
+    "array_argmin=np.argmin(height)\n",
+    "print(\"argmin\",array_argmin)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "cef3af2e-be4e-4eb7-9436-b8c0ddf90e6b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "substraction [3]\n"
+     ]
+    }
+   ],
+   "source": [
+    "a=np.array([4])\n",
+    "b=np.array([1])\n",
+    "substraction=a-b\n",
+    "print(\"substraction\",substraction)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "a1a4146a-c0dd-421f-9018-d9cfa7fdbf8a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "sample without replacement: [171 175 172 155 158]\n"
+     ]
+    }
+   ],
+   "source": [
+    "sample_no_replacement=np.random.choice(height,5)\n",
+    "print(\"sample without replacement:\",sample_no_replacement)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "aae0542f-ef6c-4039-8e8c-ff933bf8e272",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
